@@ -86,4 +86,25 @@ La commande "git reset" permet de transférer les modifications d'un fichier de 
 J'utilise "git status" qui me surligne le fichier "brouillon.txt" en rouge ce qui m'indique que ses modifications sont uniquement dans la Staging Area. Suite au commit du "fichier1.txt", il ne devrait plus y avoir aucune mention du "fichier1.txt" étant donné qu'elles ont été commit dans le Repository.
 
 11)
+J'ai utilisé "git status" afin de vérifier si toutes mes modifications avaient été sauvegardé avec succès dans le Repository.
 
+12)
+J'ai utilisé "git log" qui désormais indique également la branche sur le serveur "origin/develop" à côté de la branche "develop" ce qui montre que ce commit est synchronisé avec la branche du serveur distant, indiquant que le push a été un succès.
+
+13)
+Usage de la commande "git clone https://github.com/PaulineLam24/TP-Git.git" afin de récupérer le projet :
+Clonage dans 'TP-Git'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Réception d'objets: 100% (9/9), fait.
+
+14)
+Grâce à la commande "git ls-files" nous pouvons voir qu'il n'y a que le fichier README.md qui est présent sur le repository. Avec "git log", on trouve 3 commits différents : "Correctif README.md", "Ajout dans README.md" et "Initial commit".
+
+15)
+Le premier commit "9b68" consiste en la création du fichier README.md qui a comme contenu la seule ligne "# TP-Git". Le deuxième commit "f7a7" lui consiste en la suppression de la ligne précédement ajouté pour ensuite rajouter par dessus les lignes :
+	# TP-Git
+	# Ceci est un fichier README.md...
+Enfin, le troisième commit "f813" consiste en la suppression de la ligne "# Ceci est un fichier README.md..." pour rajouter un saut de ligne puis la ligne "Ceci est un fichier README.md...". J'ai utilisé la commande "git show" associés aux hashcodes respectifs.
