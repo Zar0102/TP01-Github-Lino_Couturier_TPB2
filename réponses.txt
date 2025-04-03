@@ -71,4 +71,19 @@ Nous pouvons constater que "git diff" ne va mettre en avant uniquement les diff�
 
 En terme de différence, "git log" ne sert qu'à visualiser l'historique des commits effectués. On peut ensuite consulter les détails du commit avec "git show" notamment les modifications apportées. Cependant cette visualisation des modifications ne s'applique qu'au commit précisé en paramètre tandis que "git diff" va mettre en lumière les modifications du Working directory (ou de la Staging Area en fonction du paramètre). Quant à lui "git status" permet d'avoir une vue d'ensemble de la branche sur lequel l'on travaille avec des suggestions sur le fait de passer les modifications actuelles vers la Staging Area ou alors vers le Repository par un commit.
 
+8)
+Usage de "git status" après l'ajout des deux nouveaux fichiers à la Staging Area :
+Sur la branche develop
+Modifications qui seront validées :
+  (utilisez "git restore --staged <fichier>..." pour désindexer)
+	nouveau fichier : brouillon.txt
+	nouveau fichier : fichier1.txt
+	
+9)
+La commande "git reset" permet de transférer les modifications d'un fichier de la Staging Area vers le Working directory.
+
+10)
+J'utilise "git status" qui me surligne le fichier "brouillon.txt" en rouge ce qui m'indique que ses modifications sont uniquement dans la Staging Area. Suite au commit du "fichier1.txt", il ne devrait plus y avoir aucune mention du "fichier1.txt" étant donné qu'elles ont été commit dans le Repository.
+
+11)
 
