@@ -30,5 +30,35 @@ Nous pouvons constater que nos "git add" s'est déroulé sans encombre avec la m
 3)
 La commande git add déplace les modifications effectuées dans la staging area donc je pense qu'elles se situent dans cet espace.
 
-4)
+5)
+Consultation de la liste des commits à l'aide de "git log" :
+lino@rogerboulot:~/BOULOT/local/s2/Git/TP01/TP1-couturier$ git log
+commit 48bc5ca474c3001f9fe88cc4f0244662a73be949 (HEAD -> develop)
+Author: Zar <lino.couturier@laposte.net>
+Date:   Thu Apr 3 21:09:01 2025 +0200
 
+    premier commit
+    
+6)
+Usage de "git diff" juste après la modification du README et avant l'ajout des modifications :
+diff --git a/README.md b/README.md
+index 94fc7f9..02b5a7a 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+ # TP1 Git - Couturier_Lino
++# Ajout d'une deuxième ligne
+
+Usage de "git diff" suite à l'ajout des modifications de README :
+<aucun affichage>
+
+Usage de "git diff --staged" à la suite :
+diff --git a/README.md b/README.md
+index 94fc7f9..02b5a7a 100644
+--- a/README.md
++++ b/README.md
+@@ -1 +1,2 @@
+ # TP1 Git - Couturier_Lino
++# Ajout d'une deuxième ligne
+
+Nous pouvons constater que "git diff" ne va mettre en avant uniquement les différences de versions dans le Working directory. Une fois passées dans la 
