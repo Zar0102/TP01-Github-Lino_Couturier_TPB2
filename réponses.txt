@@ -61,4 +61,14 @@ index 94fc7f9..02b5a7a 100644
  # TP1 Git - Couturier_Lino
 +# Ajout d'une deuxième ligne
 
-Nous pouvons constater que "git diff" ne va mettre en avant uniquement les différences de versions dans le Working directory. Une fois passées dans la 
+Nous pouvons constater que "git diff" ne va mettre en avant uniquement les différences de versions dans le Working directory. Une fois passées dans la Staging Area, c'est "git diff --staged" qui va nous permettre de voir les modifications effectuées.
+
+7)
+"git log" permet de visualiser tous les commits effectués sur la branche actuelle avec leur hashcode, l'auteur, la date (et l'heure), puis le message de commit.
+"git diff" permet de mettre en lumière les modifications effectuées sur l'espace git précisé en paramètre. Sans option, la commande montre les modifications effectués dans le Working directory. Avec l'option "--staged", elle montre celles effectuées dans la Staging Area. La commande montre les modifications d'abord en désignant le fichier modifié puis en surlignant les modifications qui lui ont été apportées en rouge pour les suppressions de lignes et en vert pour les ajouts.
+"git show" permet d'avoir le détail concernant un commit en particulier à l'aide de son hashcode. La commande fournie les mêmes informations que dans les logs en montrant également les modifications apportées à l'image de "git diff".
+"git status" donne un aperçu global de l'état de la branche actuelle tout espace Git confondu. C'est plus un outil d'aide suggérant les actions à faire afin de conserver son travail correctement. Il indique les fichiers qui ont reçu des modifications ainsi que les commandes à effectuer pour les sauvegarder. Les fichiers surlignés en rouge doivent voir leur modifications ajouté tandis que les fichiers surilignés en vert voient leur modifications prête au commit et donc à la sauvegarde sur le repository.
+
+En terme de différence, "git log" ne sert qu'à visualiser l'historique des commits effectués. On peut ensuite consulter les détails du commit avec "git show" notamment les modifications apportées. Cependant cette visualisation des modifications ne s'applique qu'au commit précisé en paramètre tandis que "git diff" va mettre en lumière les modifications du Working directory (ou de la Staging Area en fonction du paramètre). Quant à lui "git status" permet d'avoir une vue d'ensemble de la branche sur lequel l'on travaille avec des suggestions sur le fait de passer les modifications actuelles vers la Staging Area ou alors vers le Repository par un commit.
+
+
