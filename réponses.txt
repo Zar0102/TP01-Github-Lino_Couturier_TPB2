@@ -1,0 +1,34 @@
+TP01 - Git
+Lino Couturier TPB2
+
+1)
+La commande "git status" permet d'afficher les actions possibles de l'utilisateur en fonction de l'état de la branche actuelle (notamment des modifications faites à add ou commit etc). Dans notre cas :
+Sur la branche develop
+
+Aucun commit
+
+Fichiers non suivis:
+  (utilisez "git add <fichier>..." pour inclure dans ce qui sera validé)
+	README.md
+
+aucune modification ajoutée à la validation mais des fichiers non suivis sont présents (utilisez "git add" pour les suivre)
+
+La commande indique sur quelle branche de l'arbre on se situe puis nous indique le nombre de commit effectués. Ensuite elle nous montre les modifications effectués et nous indique quoi faire afin de pouvoir les appliquer.
+
+2)
+Sur la branche develop
+
+Aucun commit
+
+Modifications qui seront validées :
+  (utilisez "git rm --cached <fichier>..." pour désindexer)
+	nouveau fichier : README.md
+	nouveau fichier : "r\303\251ponses.txt"
+
+Nous pouvons constater que nos "git add" s'est déroulé sans encombre avec la modification qui a bien été transféré dans la staging area et qui est prête à être commit.
+
+3)
+La commande git add déplace les modifications effectuées dans la staging area donc je pense qu'elles se situent dans cet espace.
+
+4)
+
